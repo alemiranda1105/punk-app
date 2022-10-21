@@ -15,10 +15,12 @@ enum BeerServiceError: Error {
 }
 
 struct BeerService {
-    private let API_URL: URL = URL(string: "https://api.punkapi.com/v2/beers")!
+    private let API_URL: String = "https://api.punkapi.com/v2/beers"
+    private let maxPages: Int = 10
+    private let itemsPerPage: Int = 20
     
-    public func getAllBeers(_page: Int = 1, _maxPages: Int = 10, _itemsPerPage: Int = 20, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
-        var request = URLRequest(url: self.API_URL)
+    public func searchBeerByFood(food: String, page: Int? = 1, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
+        var request = URLRequest(url: URL(string: "\(API_URL)?food=\(food)")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard data != nil else {

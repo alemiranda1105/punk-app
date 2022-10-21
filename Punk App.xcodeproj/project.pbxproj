@@ -14,6 +14,8 @@
 		A9507CD72901879E007F6E74 /* Punk_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CD62901879E007F6E74 /* Punk_AppTests.swift */; };
 		A9507CE12901879E007F6E74 /* Punk_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CE02901879E007F6E74 /* Punk_AppUITests.swift */; };
 		A9507CE32901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CE22901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift */; };
+		A9DAFFB32902DEA20049B32C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAFFB22902DEA20049B32C /* SearchView.swift */; };
+		A9DAFFB52902E2930049B32C /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DAFFB42902E2930049B32C /* SearchBar.swift */; };
 		A9F273A32901CD68009EACA7 /* BeerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F273A22901CD68009EACA7 /* BeerList.swift */; };
 		A9F273A62901CE4B009EACA7 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F273A52901CE4B009EACA7 /* Beer.swift */; };
 		A9F273A82901CFDB009EACA7 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F273A72901CFDB009EACA7 /* BeerService.swift */; };
@@ -49,6 +51,8 @@
 		A9507CDC2901879E007F6E74 /* Punk AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Punk AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9507CE02901879E007F6E74 /* Punk_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppUITests.swift; sourceTree = "<group>"; };
 		A9507CE22901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A9DAFFB22902DEA20049B32C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		A9DAFFB42902E2930049B32C /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A9F273A22901CD68009EACA7 /* BeerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerList.swift; sourceTree = "<group>"; };
 		A9F273A52901CE4B009EACA7 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		A9F273A72901CFDB009EACA7 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		A9507CC42901879D007F6E74 /* Punk App */ = {
 			isa = PBXGroup;
 			children = (
+				A9DAFFB12902DE6C0049B32C /* components */,
 				A9F273AC2901E1FC009EACA7 /* helpers */,
 				A9F273A92901CFDE009EACA7 /* services */,
 				A9F273A42901CE3D009EACA7 /* models */,
@@ -140,11 +145,20 @@
 			path = "Punk AppUITests";
 			sourceTree = "<group>";
 		};
+		A9DAFFB12902DE6C0049B32C /* components */ = {
+			isa = PBXGroup;
+			children = (
+				A9DAFFB42902E2930049B32C /* SearchBar.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 		A9F273A02901CD31009EACA7 /* views */ = {
 			isa = PBXGroup;
 			children = (
 				A9F273A12901CD48009EACA7 /* beer */,
 				A9507CC72901879D007F6E74 /* ContentView.swift */,
+				A9DAFFB22902DEA20049B32C /* SearchView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -316,6 +330,8 @@
 				A9F273A82901CFDB009EACA7 /* BeerService.swift in Sources */,
 				A9507CC62901879D007F6E74 /* Punk_AppApp.swift in Sources */,
 				A9F273A32901CD68009EACA7 /* BeerList.swift in Sources */,
+				A9DAFFB32902DEA20049B32C /* SearchView.swift in Sources */,
+				A9DAFFB52902E2930049B32C /* SearchBar.swift in Sources */,
 				A9F273AB2901E0A0009EACA7 /* BeerListItem.swift in Sources */,
 				A9F273AE2901E207009EACA7 /* MockData.swift in Sources */,
 				A9F273A62901CE4B009EACA7 /* Beer.swift in Sources */,
