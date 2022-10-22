@@ -88,21 +88,6 @@ struct SearchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                SearchBar(searchText: self.$searchText)
-                    .onChange(of: searchText) { newValue in
-                        if !newValue.isEmpty {
-                            loadBeersByFood(food: newValue, page: currentPage)
-                        }
-                    }
-                if !pending && error == nil && beerList.isEmpty && searchText.isEmpty {
-                    Text("Start writing a food to find the best beer 🍻")
-                        .multilineTextAlignment(.center)
-                        .font(.system(size: 25, weight: .light, design: .rounded))
-                        .padding(.top, 20)
-                }
-            
-                Spacer()
-                
                 if error != nil && !pending {
                     Text(error!)
                         .font(.callout)
@@ -122,9 +107,15 @@ struct SearchView: View {
                 
             }
             .navigationTitle("Search")
-            .onAppear {
-                loadAllBeers()
+            .searchable(text: $searchText)
+            .onChange(of: searchText) { newValue in
+                if !newValue.isEmpty {
+                    loadBeersByFood(food: newValue, page: currentPage)
+                }
             }
+        }
+        .onAppear {
+            loadAllBeers()
         }
     }
 }
