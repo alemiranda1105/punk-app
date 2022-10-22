@@ -12,11 +12,33 @@ struct SearchView: View {
     
     @State var searchText = ""
     @State var beerList: [Beer] = []
-    @State var pending = false
+    @State var pending = true
     @State var error: String?
     
     @State var currentPage: Int = 1
     @State var lastPage = false
+    
+    private func loadAllBeers() {
+        self.pending = true
+        self.beerService.getAllBeers(page: currentPage) { result in
+            lastPage = false
+            switch result {
+            case .success(let data):
+                self.beerList = data
+            case .failure(let error):
+                if error == .beersNotFound {
+                    if !self.beerList.isEmpty {
+                        lastPage = true
+                    } else {
+                        self.error = "We could not find any beer 😕"
+                    }
+                } else if error == .timeOut {
+                    self.error = "Something went wrong, please try again ⚙️"
+                }
+            }
+            self.pending = false
+        }
+    }
     
     private func loadBeersByFood(food: String, page: Int) {
         self.pending = true
@@ -96,6 +118,9 @@ struct SearchView: View {
                 }
             }
             .navigationTitle("Search")
+            .onAppear {
+                loadAllBeers()
+            }
         }
     }
 }
