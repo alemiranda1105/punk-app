@@ -16,9 +16,13 @@ struct Beer: Decodable {
 }
 
 // MARK: - BoilVolume
-struct MeasureUnit: Decodable {
-    let value: Double?
-    let unit: String?
+struct MeasureUnit: Decodable, CustomStringConvertible {
+    let value: Double
+    let unit: String
+    
+    public var description: String {
+        return "\(value.description) \(unit)"
+    }
 }
 
 // MARK: - Ingredients

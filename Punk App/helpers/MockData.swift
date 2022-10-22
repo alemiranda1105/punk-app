@@ -38,7 +38,7 @@ let mockBeer = Beer(id: 1,
                         malt: [Malt(name: "Maris Otter Extra Pale", amount: MeasureUnit(value: 3.3, unit: "kilograms"))],
                         hops: [Hop(name: "Fuggles", amount: MeasureUnit(value: 25, unit: "grams"), add: "start", attribute: "bitter")],
                         yeast: "Wyeast 1056 - American Ale™"),
-                        food_pairing: ["Spicy chicken tikka masala"],
+                        food_pairing: ["Spicy chicken tikka masala", "Spaghettis", "Tortilla"],
                         brewers_tips: "The earthy and floral aromas from the hops can be overpowering. Drop a little Cascade in at the end of the boil to lift the profile with a bit of citrus.",
                         contributed_by: "Sam Mason <samjbmason>"
                     )
