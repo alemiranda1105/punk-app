@@ -116,7 +116,6 @@
 		A9507CC42901879D007F6E74 /* Punk App */ = {
 			isa = PBXGroup;
 			children = (
-				A9DAFFB12902DE6C0049B32C /* components */,
 				A9F273AC2901E1FC009EACA7 /* helpers */,
 				A9F273A92901CFDE009EACA7 /* services */,
 				A9F273A42901CE3D009EACA7 /* models */,
@@ -161,17 +160,18 @@
 			path = ingredients;
 			sourceTree = "<group>";
 		};
-		A9DAFFB12902DE6C0049B32C /* components */ = {
+		A95F49742904484900480D59 /* shared */ = {
 			isa = PBXGroup;
 			children = (
 				A9DAFFB42902E2930049B32C /* SearchBar.swift */,
 			);
-			path = components;
+			path = shared;
 			sourceTree = "<group>";
 		};
 		A9F273A02901CD31009EACA7 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A95F49742904484900480D59 /* shared */,
 				A95F496F2904392900480D59 /* ingredients */,
 				A9F273A12901CD48009EACA7 /* beer */,
 				A9507CC72901879D007F6E74 /* ContentView.swift */,
