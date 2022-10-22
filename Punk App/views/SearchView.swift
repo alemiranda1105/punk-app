@@ -47,6 +47,9 @@ struct SearchView: View {
             switch result {
             case .success(let data):
                 self.beerList = data
+                if self.beerList.isEmpty {
+                    self.error = "We could not find any beer 😕"
+                }
             case .failure(let error):
                 if error == .beersNotFound {
                     if !self.beerList.isEmpty {
@@ -89,8 +92,6 @@ struct SearchView: View {
                     .onChange(of: searchText) { newValue in
                         if !newValue.isEmpty {
                             loadBeersByFood(food: newValue, page: currentPage)
-                        } else if newValue.isEmpty {
-                            self.beerList = []
                         }
                     }
                 if !pending && error == nil && beerList.isEmpty && searchText.isEmpty {
@@ -107,15 +108,18 @@ struct SearchView: View {
                         .font(.callout)
                         .foregroundColor(.gray)
                 }
+                
                 if pending {
                     ProgressView()
                 }
+                
                 if !pending && error == nil && !beerList.isEmpty {
                     BeerList(beerList: self.$beerList, pageNumber: self.$currentPage, lastPage: self.$lastPage)
                         .onChange(of: currentPage) { newValue in
                             nextPage(food: searchText, page: newValue)
                         }
                 }
+                
             }
             .navigationTitle("Search")
             .onAppear {
