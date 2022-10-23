@@ -11,6 +11,8 @@ struct SearchView: View {
     private let beerService: BeerService = BeerService()
     
     @State var searchText = ""
+    @State var searchFilters = SearchFilter()
+    
     @State var beerList: [Beer] = []
     @State var pending = true
     @State var error: String?
@@ -20,7 +22,7 @@ struct SearchView: View {
     
     private func loadAllBeers() {
         self.pending = true
-        self.beerService.getAllBeers(page: currentPage) { result in
+        self.beerService.getAllBeers(page: currentPage, filters: searchFilters) { result in
             lastPage = false
             switch result {
             case .success(let data):
@@ -42,7 +44,7 @@ struct SearchView: View {
     
     private func loadBeersByFood(food: String, page: Int) {
         self.pending = true
-        self.beerService.searchBeerByFood(food: food, page: page) { result in
+        self.beerService.searchBeerByFood(food: food, page: page, filters: searchFilters) { result in
             lastPage = false
             switch result {
             case .success(let data):
@@ -66,7 +68,7 @@ struct SearchView: View {
     }
     
     private func nextPage(food: String, page: Int) {
-        self.beerService.searchBeerByFood(food: food, page: page) { result in
+        self.beerService.searchBeerByFood(food: food, page: page, filters: searchFilters) { result in
             lastPage = true
             switch result {
             case .success(let data):
@@ -107,6 +109,20 @@ struct SearchView: View {
                 
             }
             .navigationTitle("Search")
+            .toolbar {
+                if !beerList.isEmpty {
+                    ToolbarItem {
+                        SearchFiltersView(searchFilters: self.$searchFilters)
+                            .onChange(of: searchFilters) { _ in
+                                if searchText.isEmpty {
+                                    loadAllBeers()
+                                } else {
+                                    loadBeersByFood(food: searchText, page: currentPage)
+                                }
+                            }
+                    }
+                }
+            }
             .searchable(text: $searchText)
             .onChange(of: searchText) { newValue in
                 if !newValue.isEmpty {

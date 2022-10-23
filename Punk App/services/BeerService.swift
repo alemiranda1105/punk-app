@@ -18,8 +18,8 @@ struct BeerService {
     private let API_URL: String = "https://api.punkapi.com/v2/beers"
     private let itemsPerPage: Int = 20
     
-    public func getAllBeers(page: Int, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
-        var request = URLRequest(url: URL(string: "\(API_URL)?page=\(page)&per_page=\(itemsPerPage)")!)
+    public func getAllBeers(page: Int, filters: SearchFilter, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
+        var request = URLRequest(url: URL(string: "\(API_URL)?page=\(page)&per_page=\(itemsPerPage)&\(filters.description)")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard data != nil else {
@@ -41,7 +41,7 @@ struct BeerService {
         }.resume()
     }
     
-    public func searchBeerByFood(food: String, page: Int, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
+    public func searchBeerByFood(food: String, page: Int, filters: SearchFilter, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
         var request = URLRequest(url: URL(string: "\(API_URL)?food=\(food)&page=\(page)&per_page=\(itemsPerPage)")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request) { data, response, error in
