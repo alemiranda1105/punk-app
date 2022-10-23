@@ -42,7 +42,7 @@ struct BeerService {
     }
     
     public func searchBeerByFood(food: String, page: Int, filters: SearchFilter, completionHandler: @escaping (Result<[Beer], BeerServiceError>) -> ()) {
-        var request = URLRequest(url: URL(string: "\(API_URL)?food=\(food)&page=\(page)&per_page=\(itemsPerPage)")!)
+        var request = URLRequest(url: URL(string: "\(API_URL)?food=\(food)&page=\(page)&per_page=\(itemsPerPage)&\(filters.description)")!)
         request.httpMethod = "GET"
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard data != nil else {
