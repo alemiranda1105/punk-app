@@ -74,6 +74,8 @@ struct SearchFiltersView: View {
                     if filtersApplied {
                         Button(action: {
                             searchFilters.clearFilters()
+                            self.filtersApplied = false
+                            self.showFilters = false
                         }) {
                             Text("Clear filters")
                                 .bold()
