@@ -13,9 +13,6 @@
 		A9507CC82901879D007F6E74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CC72901879D007F6E74 /* ContentView.swift */; };
 		A9507CCA2901879E007F6E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9507CC92901879E007F6E74 /* Assets.xcassets */; };
 		A9507CCD2901879E007F6E74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9507CCC2901879E007F6E74 /* Preview Assets.xcassets */; };
-		A9507CD72901879E007F6E74 /* Punk_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CD62901879E007F6E74 /* Punk_AppTests.swift */; };
-		A9507CE12901879E007F6E74 /* Punk_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CE02901879E007F6E74 /* Punk_AppUITests.swift */; };
-		A9507CE32901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CE22901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift */; };
 		A95F496C290425A700480D59 /* BeerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F496B290425A700480D59 /* BeerDetails.swift */; };
 		A95F496E290429B700480D59 /* BeerDetailsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F496D290429B700480D59 /* BeerDetailsSection.swift */; };
 		A95F49712904393E00480D59 /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95F49702904393E00480D59 /* IngredientsList.swift */; };
@@ -30,23 +27,6 @@
 		A9F273AE2901E207009EACA7 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F273AD2901E207009EACA7 /* MockData.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A9507CD32901879E007F6E74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9507CBA2901879D007F6E74 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9507CC12901879D007F6E74;
-			remoteInfo = "Punk App";
-		};
-		A9507CDD2901879E007F6E74 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A9507CBA2901879D007F6E74 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9507CC12901879D007F6E74;
-			remoteInfo = "Punk App";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A9461E872906F03D0097ED2C /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
 		A9461E892906F4A40097ED2C /* BeerDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsVM.swift; sourceTree = "<group>"; };
@@ -55,11 +35,6 @@
 		A9507CC72901879D007F6E74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A9507CC92901879E007F6E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9507CCC2901879E007F6E74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A9507CD22901879E007F6E74 /* Punk AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Punk AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9507CD62901879E007F6E74 /* Punk_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppTests.swift; sourceTree = "<group>"; };
-		A9507CDC2901879E007F6E74 /* Punk AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Punk AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9507CE02901879E007F6E74 /* Punk_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppUITests.swift; sourceTree = "<group>"; };
-		A9507CE22901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A95F496B290425A700480D59 /* BeerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetails.swift; sourceTree = "<group>"; };
 		A95F496D290429B700480D59 /* BeerDetailsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsSection.swift; sourceTree = "<group>"; };
 		A95F49702904393E00480D59 /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
@@ -82,20 +57,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9507CCF2901879E007F6E74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9507CD92901879E007F6E74 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				A9507CC42901879D007F6E74 /* Punk App */,
-				A9507CD52901879E007F6E74 /* Punk AppTests */,
-				A9507CDF2901879E007F6E74 /* Punk AppUITests */,
 				A9507CC32901879D007F6E74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A9507CC22901879D007F6E74 /* Punk App.app */,
-				A9507CD22901879E007F6E74 /* Punk AppTests.xctest */,
-				A9507CDC2901879E007F6E74 /* Punk AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,23 +106,6 @@
 				A9507CCC2901879E007F6E74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A9507CD52901879E007F6E74 /* Punk AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				A9507CD62901879E007F6E74 /* Punk_AppTests.swift */,
-			);
-			path = "Punk AppTests";
-			sourceTree = "<group>";
-		};
-		A9507CDF2901879E007F6E74 /* Punk AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A9507CE02901879E007F6E74 /* Punk_AppUITests.swift */,
-				A9507CE22901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift */,
-			);
-			path = "Punk AppUITests";
 			sourceTree = "<group>";
 		};
 		A95F496F2904392900480D59 /* ingredients */ = {
@@ -253,42 +193,6 @@
 			productReference = A9507CC22901879D007F6E74 /* Punk App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A9507CD12901879E007F6E74 /* Punk AppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9507CE92901879E007F6E74 /* Build configuration list for PBXNativeTarget "Punk AppTests" */;
-			buildPhases = (
-				A9507CCE2901879E007F6E74 /* Sources */,
-				A9507CCF2901879E007F6E74 /* Frameworks */,
-				A9507CD02901879E007F6E74 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9507CD42901879E007F6E74 /* PBXTargetDependency */,
-			);
-			name = "Punk AppTests";
-			productName = "Punk AppTests";
-			productReference = A9507CD22901879E007F6E74 /* Punk AppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A9507CDB2901879E007F6E74 /* Punk AppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A9507CEC2901879E007F6E74 /* Build configuration list for PBXNativeTarget "Punk AppUITests" */;
-			buildPhases = (
-				A9507CD82901879E007F6E74 /* Sources */,
-				A9507CD92901879E007F6E74 /* Frameworks */,
-				A9507CDA2901879E007F6E74 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A9507CDE2901879E007F6E74 /* PBXTargetDependency */,
-			);
-			name = "Punk AppUITests";
-			productName = "Punk AppUITests";
-			productReference = A9507CDC2901879E007F6E74 /* Punk AppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -301,14 +205,6 @@
 				TargetAttributes = {
 					A9507CC12901879D007F6E74 = {
 						CreatedOnToolsVersion = 14.0.1;
-					};
-					A9507CD12901879E007F6E74 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = A9507CC12901879D007F6E74;
-					};
-					A9507CDB2901879E007F6E74 = {
-						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = A9507CC12901879D007F6E74;
 					};
 				};
 			};
@@ -326,8 +222,6 @@
 			projectRoot = "";
 			targets = (
 				A9507CC12901879D007F6E74 /* Punk App */,
-				A9507CD12901879E007F6E74 /* Punk AppTests */,
-				A9507CDB2901879E007F6E74 /* Punk AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -339,20 +233,6 @@
 			files = (
 				A9507CCD2901879E007F6E74 /* Preview Assets.xcassets in Resources */,
 				A9507CCA2901879E007F6E74 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9507CD02901879E007F6E74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9507CDA2901879E007F6E74 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,37 +262,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A9507CCE2901879E007F6E74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9507CD72901879E007F6E74 /* Punk_AppTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A9507CD82901879E007F6E74 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9507CE32901879E007F6E74 /* Punk_AppUITestsLaunchTests.swift in Sources */,
-				A9507CE12901879E007F6E74 /* Punk_AppUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A9507CD42901879E007F6E74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9507CC12901879D007F6E74 /* Punk App */;
-			targetProxy = A9507CD32901879E007F6E74 /* PBXContainerItemProxy */;
-		};
-		A9507CDE2901879E007F6E74 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A9507CC12901879D007F6E74 /* Punk App */;
-			targetProxy = A9507CDD2901879E007F6E74 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A9507CE42901879E007F6E74 /* Debug */ = {
@@ -591,78 +441,6 @@
 			};
 			name = Release;
 		};
-		A9507CEA2901879E007F6E74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "es.alejandromiranda.Punk-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Punk App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Punk App";
-			};
-			name = Debug;
-		};
-		A9507CEB2901879E007F6E74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "es.alejandromiranda.Punk-AppTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Punk App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Punk App";
-			};
-			name = Release;
-		};
-		A9507CED2901879E007F6E74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "es.alejandromiranda.Punk-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Punk App";
-			};
-			name = Debug;
-		};
-		A9507CEE2901879E007F6E74 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "es.alejandromiranda.Punk-AppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Punk App";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,24 +458,6 @@
 			buildConfigurations = (
 				A9507CE72901879E007F6E74 /* Debug */,
 				A9507CE82901879E007F6E74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9507CE92901879E007F6E74 /* Build configuration list for PBXNativeTarget "Punk AppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9507CEA2901879E007F6E74 /* Debug */,
-				A9507CEB2901879E007F6E74 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A9507CEC2901879E007F6E74 /* Build configuration list for PBXNativeTarget "Punk AppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A9507CED2901879E007F6E74 /* Debug */,
-				A9507CEE2901879E007F6E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
