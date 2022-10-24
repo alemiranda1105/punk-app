@@ -63,4 +63,28 @@ struct BeerService {
             }
         }.resume()
     }
+    
+    public func getBeerById(beerId: Int, completionHandler: @escaping (Result<Beer, BeerServiceError>) -> ()) {
+        var request = URLRequest(url: URL(string: "\(API_URL)/\(beerId)")!)
+        request.httpMethod = "GET"
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard data != nil else {
+                completionHandler(.failure(BeerServiceError.beersNotFound))
+                return
+            }
+            do {
+                let decoder = JSONDecoder()
+                // The data is received as an Array
+                let decodedData = try decoder.decode([Beer].self, from: data!)
+                DispatchQueue.main.async {
+                    completionHandler(.success(decodedData[0]))
+                }
+            } catch {
+                print(error.localizedDescription)
+                DispatchQueue.main.async {
+                    completionHandler(.failure(BeerServiceError.beersNotFound))
+                }
+            }
+        }.resume()
+    }
 }

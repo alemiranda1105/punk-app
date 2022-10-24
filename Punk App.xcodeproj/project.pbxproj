@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A9461E882906F03D0097ED2C /* SearchVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9461E872906F03D0097ED2C /* SearchVM.swift */; };
+		A9461E8A2906F4A40097ED2C /* BeerDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9461E892906F4A40097ED2C /* BeerDetailsVM.swift */; };
 		A9507CC62901879D007F6E74 /* Punk_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CC52901879D007F6E74 /* Punk_AppApp.swift */; };
 		A9507CC82901879D007F6E74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9507CC72901879D007F6E74 /* ContentView.swift */; };
 		A9507CCA2901879E007F6E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9507CC92901879E007F6E74 /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		A9461E872906F03D0097ED2C /* SearchVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVM.swift; sourceTree = "<group>"; };
+		A9461E892906F4A40097ED2C /* BeerDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsVM.swift; sourceTree = "<group>"; };
 		A9507CC22901879D007F6E74 /* Punk App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Punk App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9507CC52901879D007F6E74 /* Punk_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Punk_AppApp.swift; sourceTree = "<group>"; };
 		A9507CC72901879D007F6E74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				A9461E872906F03D0097ED2C /* SearchVM.swift */,
+				A9461E892906F4A40097ED2C /* BeerDetailsVM.swift */,
 			);
 			path = viewModels;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				A9507CC82901879D007F6E74 /* ContentView.swift in Sources */,
 				A96896952905449E00C94BB1 /* SearchFilter.swift in Sources */,
 				A9F273A82901CFDB009EACA7 /* BeerService.swift in Sources */,
+				A9461E8A2906F4A40097ED2C /* BeerDetailsVM.swift in Sources */,
 				A9507CC62901879D007F6E74 /* Punk_AppApp.swift in Sources */,
 				A9461E882906F03D0097ED2C /* SearchVM.swift in Sources */,
 				A9F273A32901CD68009EACA7 /* BeerList.swift in Sources */,

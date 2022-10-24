@@ -10,7 +10,7 @@ import SwiftUI
 struct BeerListItem: View {
     @Binding var beer: Beer
     var body: some View {
-        NavigationLink(destination: BeerDetails(beer: self.$beer)) {
+        NavigationLink(destination: BeerDetails(beerId: self.beer.id)) {
             HStack(alignment: .center) {
                 AsyncImage(url: URL(string: self.beer.image_url)) { image in
                     image
